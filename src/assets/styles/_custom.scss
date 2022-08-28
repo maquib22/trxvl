@@ -1,0 +1,55 @@
+@import "./colors";
+
+
+.container {
+    max-width: 136.6rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.relative{
+    position: relative;
+}
+
+// =============== Header ===============
+.header{
+    position: absolute;
+    display: flex;
+    height: 8.5rem;
+    // max-width: 136.6rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    box-sizing: border-box;
+    z-index: 1;
+
+    .logo{
+        font-size: 3.2rem;
+        font-weight: bold;
+        .logo-link {
+            color: #fff;
+        }
+    }
+    .nav {
+        .nav-menu{
+            display: flex;
+            column-gap: 2.4rem;
+            .nav-menu-item{
+                padding: .8rem;
+                border-bottom: 1px solid #fff;
+                &:hover{
+                    border-bottom: 1px solid green;
+                    .nav-menu-link {
+                        color: green;
+                    }
+                }
+                .nav-menu-link{
+                    color: #fff;
+                    &:hover{
+                        
+                    }
+                }
+            }
+        }
+    }
+}
